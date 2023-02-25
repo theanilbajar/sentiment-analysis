@@ -1,0 +1,5 @@
+runtime: python38
+
+instance_class: F4
+
+entrypoint: gunicorn -b :8080 -w 1 app:app
